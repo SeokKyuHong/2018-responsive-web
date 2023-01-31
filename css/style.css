@@ -1,0 +1,939 @@
+@charset "utf-8";
+
+img{
+    
+    margin: 0;
+    padding: 0;
+    
+}
+.clear{
+    clear: both;
+}
+section{
+    margin: 0;
+    padding: 0;
+}
+
+
+#sec1{
+    position: relative;
+    width: 100%;
+    height: 1024px;
+}
+#sec1 header{
+    
+    position: absolute;
+    float: right;
+    right: 100px;
+    top: 100px;
+    z-index: 9999;
+    width: 160px;
+    height: 100px;
+}
+#sec1 header>a{
+    display: none;
+}
+#sec1 header h1{
+    text-align: right;
+}
+#sec1 header nav{
+    position: absolute;
+    top: 100px;
+    right:120px;
+}
+#sec1 header nav>ul>li{
+    position: relative;
+    width: 30px;
+    height: 170px;
+    text-align: center;
+}
+#sec1 header nav>ul>li:last-child{
+    
+    margin-top: -50px;
+    margin-left: -20px
+}
+
+#sec1 header nav>ul>li select{
+    font-size: 1.25em
+}
+#sec1 header nav>ul>li:hover >a{
+    border-left: 1px solid #fff;
+}
+#sec1 header nav>ul>li>a{
+    display: block;
+    font-size: 1.6em;
+    color: #fff;
+}
+#sec1 header nav>ul>li>ul{
+    position: absolute;
+    left: -130px;
+    top: -10px;
+    display: none;    
+}
+
+
+#sec1 header nav>ul>li>ul li{
+    
+    width: 140px;
+    height: 50px;
+    line-height: 50px;
+    text-align: right;
+    padding-right: 30px;
+    margin: 5px 0;
+}
+#sec1 header nav>ul>li>ul li:hover a{
+    text-decoration: underline;
+}
+#sec1 header nav>ul>li>ul li a{
+    color: #fff;
+    font-size: 1.2em
+}
+#sec1 .s_img{
+    
+    width: 100%;
+    height: 100%;
+    
+}
+#sec1 .s_img ul{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#sec1 .s_img ul li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.9s;
+}
+
+#sec1 .s_img ul li.op{
+    opacity: 1;
+}
+#sec1 .s_img ul li img{
+    width: 100%;
+    height: 100%;
+    
+}
+#sec1 .s_img dl{
+    position: absolute;
+    margin-top: -100px;
+    top:50%;
+    left:1%;
+    width: 50px;
+    height: 200px;
+}
+#sec1 .s_img dl dd{
+    width: 30px;
+    height: 30px;
+    border: 5px solid #fff;
+    border-radius: 30px;
+    margin: 20px 0px;
+    opacity: 0.5;
+}
+#sec1 .s_img dl dd.con{
+    border: 5px solid #f70020;
+    opacity: 1;
+}
+#sec1 .s_img dl dd a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/********************************/
+#sec2{
+    width: 100%;
+    height: 1024px;
+    background-image: url("../images/back_1.jpg");
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+#sec2 h2{
+    width: 100%;
+    height: 500px;
+    color: #fff;
+    font-size: 5em;
+    text-align: center;
+    padding-top:10%
+}
+#sec2 .sec2_b{
+    width: 1024px;
+    margin: 0 auto
+}
+#sec2 .sec2_b ul{
+    display: flex;
+    justify-content: space-around;
+}
+#sec2 .sec2_b ul li{
+    text-align: center;
+    width: 300px;
+    height: 600px; 
+}
+#sec2 .sec2_b ul li:last-child{
+    margin-top: 50px;
+    width: 600px;
+    font-size:1.8em;
+    color: #777;
+    line-height: 80px
+}
+
+/************************/
+#sec3{
+    width: 1224px;
+    margin: 0 auto;
+    padding: 0 0 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+#sec3 #map{
+    width: 600px;
+    height: 500px;
+    z-index: -9999;
+}
+#sec3 .map_t{
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+}
+#sec3 .map_t h4{
+    font-size: 2em;
+    margin: 10px 10px 50px 10px;
+    line-height: 50px;
+    color: #111;
+}
+#sec3 .map_t h4 span{
+    color: #f70020;
+}
+#sec3 .map_t p{
+    font-size: 1.3em;
+    color:#444;
+    line-height: 40px;
+}
+/***************************/
+#sec4{
+    width: 100%;
+    height: 1024px;;
+    background-image: url("../images/back_2.jpg");
+    background-size: 100% 100%;
+}
+#sec4 .sec4_b{
+    display: flex;
+    justify-content: space-around;
+}
+#sec4 .sec4_b ul{
+    margin-top: 300px;
+}
+#sec4 .sec4_b ul li.img{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px;
+}
+#sec4 .sec4_b ul li.img img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+#sec4 .sec4_b ul li.img img:hover{
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+
+#sec4 .dim{
+    position: fixed;
+    z-index: 9999;
+    top:0;
+    left: 0;
+    padding: 20%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+#sec4 .dim .box{
+    overflow: hidden;
+    margin: -200px 0 0 -50px;;
+    width: 600px;
+    height: 700px;
+}
+#sec4 .dim ul{
+    
+    width: 2400px;
+    height: 600px;
+    margin-left: 0;
+    transition: all 0.4s;
+}
+#sec4 .dim ul li{
+    float: left;
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    
+}
+#sec4 .dim ul li img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    
+}
+#sec4 .dim .contller{
+    text-align: center;
+    margin-top:20px; 
+}
+#sec4 .dim .contller a{
+    display: inline-block;
+    color: #fff;
+    font-size: 3em;
+    margin: 0 20px;
+}
+
+
+#sec4 .dim .contller button{
+    width: 100px;
+    height: 50px;
+    float: right;
+    font-size: 1.3em;
+}
+
+
+#sec5{
+    width: 100%;
+    height: 500px;
+    background-color: #efefef;
+    padding-top: 10px;
+}
+#sec5 footer{
+    margin: 0 auto;
+    width: 1204px;
+}
+#sec5 ul li{
+    float: left;
+    margin: 10px;
+    width: 280px;
+    height: 360px;
+    border-right: 1px solid #999;
+}
+#sec5 ul li a{
+    display: block;
+    padding: 10px 0;
+}
+#sec5 ul li h4{
+    font-size: 1.8em;
+    font-style: italic;
+    padding: 30px 0
+}
+#sec5 ul li:last-child img{
+        width: 100%;
+    }
+#sec5 ul li:first-child p{
+    margin-bottom: 30px;
+    width: 250px
+}
+#sec5 ul li:first-child a.t{
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    overflow: hidden;
+    background-image: url(../images/sns.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    transition: all 0.3s;
+}
+#sec5 ul li:first-child a.t:hover{
+    background-position: 0px -72px;
+}
+#sec5 ul li:first-child a.f{
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    overflow: hidden;
+    background-image: url(../images/sns.jpg);
+    background-repeat: no-repeat;
+    background-position: -81px 0;
+    transition: all 0.3s;
+}
+#sec5 ul li:first-child a.f:hover{
+    background-position: -81px -72px;
+}
+#sec5 .footer{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    background-color: #000;
+}
+#sec5 .footer img{
+    width: 200px;
+    padding: 40px 0;
+}
+#sec5 .footer p{
+    color: #fff;
+    font-size: 1.2em
+}
+
+
+/*********f_nav**********/
+.fix_nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0 auto;
+    font-style: italic;
+    transform: translateY(-150px);
+    transition: all 0.4s;
+}
+.fix_nav.menu{
+    transform: translateY(0px);
+}
+.fix_nav>ul>a{
+    display: block;
+    width: 200px;
+    height: 80px;
+    margin-right:100px;
+}
+.fix_nav>ul>a>img{
+    display: block;
+    width: 100%;
+    margin: 20px;
+}
+.fix_nav>ul{
+    display: flex;
+    width: 1204px;
+    margin: 0 auto;
+    
+}
+.fix_nav>ul>li{
+    
+    
+    padding: 30px
+}
+.fix_nav>ul>li:last-child a{
+    margin: 0;
+}
+.fix_nav>ul>li:last-child select{
+    width: 120px;
+    height: 30px;
+    font-size: 1.2em;
+}
+
+.fix_nav>ul>li>a{
+    display: block;
+    font-size: 1.5em;
+    margin: 10px 0 32px 0;
+}
+.fix_nav>ul>li>ul{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    display: none;
+}
+.fix_nav>ul>li>ul>li{
+    width: 100%;
+    padding: 10px
+}
+.fix_nav>ul>li>ul>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 1.2em
+}
+.fix_nav>ul>li:hover{
+    background-color: rgba(255, 255, 255, 1);
+}
+.fix_nav>ul>li>ul>li:hover{
+    background-color: rgba(255, 255, 255, 1);
+}
+.dim_m{
+    display: none;
+}
+
+/***********************************/
+@media screen and (max-width:1270px) {
+    #sec1{
+        height: 800px;
+    }
+    #sec1 header{
+    
+    position: absolute;
+    float: right;
+    right: 70px;
+    top: 100px;
+    z-index: 9999;
+    width: 120px;
+    height: 100px;
+}
+#sec1 header h1{
+    text-align: right;
+    width: 60px;
+}
+    #sec1 header h1 img{
+        width: 100%
+    }
+#sec1 header nav{
+    position: absolute;
+    top: 100px;
+    right:120px;
+}
+#sec1 header nav>ul>li{
+    position: relative;
+    width: 30px;
+    height: 120px;
+    text-align: center;
+    margin: 5px 0;
+}
+#sec1 header nav>ul>li:last-child{
+    
+    margin-top: -50px;
+    margin-left: -20px
+}
+
+#sec1 header nav>ul>li select{
+    font-size: 1.1em
+}
+
+#sec1 header nav>ul>li>a{
+    display: block;
+    font-size: 1.2em;
+    color: #fff;
+}
+    #sec1 header nav>ul>li:last-child{
+        padding-left: 20px;
+    }
+
+
+
+#sec1 header nav>ul>li>ul li{
+    
+    width: 140px;
+    height: 30px;
+    line-height: 50px;
+    text-align: right;
+    padding-right: 30px;
+}
+#sec1 header nav>ul>li>ul li:hover a{
+    text-decoration: underline;
+}
+#sec1 header nav>ul>li>ul li a{
+    color: #fff;
+    font-size: 1.0em
+}
+    #sec4{
+        height: 800px;
+    }
+    
+  #sec4 .sec4_b ul li.img{
+    width: 250px;
+    height: 250px;
+    
+}
+    #sec5 footer{
+    margin: 0 auto;
+    width: 1124px;
+}
+    #sec5 ul li:last-child img{
+        width: 100%;
+    }
+    
+    #sec5 ul li{
+    float: left;
+    margin: 10px;
+    width: 250px;
+    height: 360px;
+    border-right: 1px solid #999;
+}
+    #sec3{
+        width: 1100px;;
+    }
+    #sec3 #map{
+        width: 500px;
+    }
+    #sec3 .map_t{
+        width: 500px;
+    }
+     }
+
+/******************/
+@media screen and (max-width:768px) {
+    #sec1{
+        height: 485px;
+    }
+    #sec1 header h1, #sec1 header nav{
+        display: none;
+    }
+    
+    #sec1 header>a{
+       display: block;
+        float: right;
+        position: fixed;
+        top: 4%;
+        right: 50px;
+        z-index: 9999;
+    }
+    #sec2{
+        height:  680px;
+    }
+    #sec2 h2{
+        margin: 0;
+        padding: 0;
+    }
+    #sec2 ul{
+        margin: -250px 0px;
+        padding: 0;
+    }
+    #sec2 ul li:first-child{
+        width: 250px;
+    }
+    #sec2 ul li>img{
+        width: 100%;
+    }
+    .dim_m nav{
+        
+        
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 100%;
+        height: 400px;
+        z-index: 999;
+    }
+    .dim_m nav>ul{
+        
+        margin-left: 300px;
+    }
+    .dim_m nav>ul>li{
+        width: 150px;
+        
+        padding: 0;
+        
+    }
+    .dim_m nav>ul>li>a{
+        color: #fff;
+        display: block;
+        padding: 5px 0;
+        margin-bottom: 10px;
+        font-size: 1.5em;
+    }
+    .dim_m nav>ul>li:hover>a{
+        text-decoration: underline;
+    }
+    .dim_m nav>ul>li>ul>li>a{
+        display: block;
+        color: #fff;
+        padding: 5px 0;
+    }
+    .dim_m nav>ul>li>ul>li:hover>a{
+        text-decoration: underline;
+    }
+    .dim_m nav>ul>li>ul{
+        display: none;
+    }
+    .dim_m{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9988;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    #sec2 .sec2_b{
+        width: 300px;
+    }
+    #sec2 .sec2_b ul li:last-child{
+    display: none;
+}
+    #sec3{
+        width: 600px;;
+    }
+    #sec3 #map{
+        width: 550px;
+        height: 450px;
+        margin: 0 auto;
+        
+    }
+    #sec3 .map_t{
+        width: 550px;
+    }
+    #sec4 .sec4_b{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #sec4 .sec4_b ul{
+        margin-top: 100px;
+    }
+    #sec5{
+    width: 100%;
+    height: 500px;
+    
+}
+#sec5 footer{
+    margin: 0 auto;
+    width: 700px;
+}
+#sec5 ul li{
+    float: left;
+    margin: 10px;
+    width: 150px;
+    height: 360px;
+    border-right: 1px solid #999;
+}
+#sec5 ul li a{
+    display: block;
+    padding: 10px 0;
+}
+#sec5 ul li h4{
+    font-size: 1.3em;
+    font-style: italic;
+    padding: 30px 0
+}
+#sec5 ul li:last-child img{
+        width: 100%;
+    }
+#sec5 ul li:first-child p{
+    margin-bottom: 30px;
+    width: 150px
+}
+#sec5 ul li:first-child a.t{
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    overflow: hidden;
+    background-image: url(../images/sns.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    transition: all 0.3s;
+}
+#sec5 ul li:first-child a.t:hover{
+    background-position: 0px -72px;
+}
+#sec5 ul li:first-child a.f{
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    overflow: hidden;
+    background-image: url(../images/sns.jpg);
+    background-repeat: no-repeat;
+    background-position: -81px 0;
+    transition: all 0.3s;
+}
+#sec5 ul li:first-child a.f:hover{
+    background-position: -81px -72px;
+}
+#sec5 .footer{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    background-color: #000;
+}
+#sec5 .footer img{
+    width: 200px;
+    padding: 40px 0;
+}
+#sec5 .footer p{
+    color: #fff;
+    font-size: 1.0em
+}
+    .fix_nav{
+    
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+   
+}
+
+    .fix_nav ul{
+        display: none;
+    }
+}
+@media screen and (max-width:414px) {
+    #sec1{
+        height: 280px;
+    }
+    #sec1 header>a{
+        width: 25px;
+        height: 25px;
+        top:13px;
+        right: 15px;
+    }
+    #sec1 header>a>img{
+        width: 100%;
+        height: 100%;
+    }
+    #sec1 .s_img dl dd{
+    width: 20px;
+    height: 20px;
+    border: 3px solid #fff;
+    
+}
+    #sec1 .s_img dl dd.con{
+    border: 3px solid #f70020;
+    
+}
+    .dim_m nav{
+        
+        
+        position: absolute;
+        top: 2%;
+        right: 2%;
+        height: 250px;
+        z-index: 999;
+        
+    }
+    .dim_m nav>ul{
+        margin-right: 50px;
+        margin-left: 100px
+    }
+    .dim_m nav>ul>li{
+        width: 100px;
+        
+        padding: 1px;
+        
+    }
+    
+    .dim_m nav>ul>li>a{
+        
+        padding: 5px 0;
+        margin-bottom: 5px;
+        font-size: 1.0em;
+    }
+    
+    .dim_m nav>ul>li>ul>li>a{
+        display: block;
+        color: #fff;
+        padding: 5px 0;
+        font-size: 0.6em;
+    }
+    .dim_m nav>ul>li>ul>li:hover>a{
+        text-decoration: underline;
+    }
+    .dim_m nav>ul>li>ul{
+        display: none;
+    }
+    .dim_m nav>ul>li:last-child{
+        margin: 0;
+        padding: 0;
+        height: 20px;
+    }
+    .dim_m nav>ul>li:last-child select{
+        height: 20px;
+        width: 70px;
+        font-size: 0.7em;
+    }
+    .fix_nav{
+    
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+   
+}
+    #sec2{
+        height: 320px;
+    }
+    #sec2 h2{
+        width: 200px;
+        height: 100px;
+        margin: 0px auto;
+    }
+    #sec2 h2>img{
+        width:100%;
+    }
+    #sec2 ul{
+        margin: 0;
+        padding: 0;
+    }
+    #sec2 .sec2_b{
+        width: 200px;
+    }
+    #sec2 ul>li:first-child{
+        width: 120px;
+        
+        
+    }
+    #sec2 ul>li>img{
+        width: 100%;
+        
+        
+    }
+    #sec2 ul>li:last-child{
+        display: none;
+    }
+    #sec2 ul li::after, #sec2 ul li::before{
+        content: "";display: block;clear: both;
+    }
+    #sec3{
+        width: 400px;
+        
+    }
+    #sec3 #map{
+        width:300px;
+        height: 250px;
+    }
+    #sec3 .map_t{
+        width: 300px;
+    }
+    #sec3 .map_t p{
+        font-size: 1em;
+    }
+    #sec4{
+        height: 1500px;
+    }
+    #sec5>footer{
+        width: 350px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #sec5>footer>ul>li:nth-child(3){
+        clear: both;
+        
+        
+    }
+    #sec5 .footer p{
+        font-size: 0.8em;
+    }
+    #sec4 .dim{
+        padding: 10px;
+    }
+    #sec4 .dim .box{
+        width: 300px;
+        height: 700px;
+        left: 0;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #sec4 .dim .box ul li{
+        
+        width: 300px;
+        height: 300px;
+    }
+    #sec4 .dim .box .contller{
+        margin-top: -300px;
+    }
+    .dim_m nav{
+        padding: 10px 80px;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
